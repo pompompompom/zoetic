@@ -4,7 +4,14 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zoetic</title>
+  <title>zoetic</title>
+
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="manifest" href="assets/manifest.json">
+<link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -12,39 +19,85 @@
 
 <style>
 body {
+  /*background-image: url('assets/banner_desktop.png');
+  background-repeat: no-repeat;
+  */
+  background-color: #454B56;
+
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  color: white;
   padding:0;
   margin:0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 64px;
-  font-weight: bold;
+}
+
+#desktop_banner {
+  margin-top: 20px;
+    width: 100%;
+}
+
+#mobile_banner {
   width: 100%;
-  height:100%;
-  text-align: center;
-  display: table;
-  height:100vh;
-  background: rgba(179,220,237,1);
-background: -moz-linear-gradient(top, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(179,220,237,1)), color-stop(50%, rgba(41,184,229,1)), color-stop(100%, rgba(188,224,238,1)));
-background: -webkit-linear-gradient(top, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%);
-background: -o-linear-gradient(top, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%);
-background: -ms-linear-gradient(top, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%);
-background: linear-gradient(to bottom, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=0 );
+  display: none;
 }
 
 .logo {
-  display: table-cell;
-  vertical-align: middle;
-  color:white;
-  text-shadow: 0 0 30px white;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 84pt;
   letter-spacing: 2px;
+  text-align: center;
+  font-weight: bolder;
+}
+.vision {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18pt;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.contact {
+
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 14pt;
+      text-align: center;
+      width: 250px;
+      height:60px;
+      line-height: 60px;
+      background-color: white;
+      color: #454B56;
+      vertical-align: middle;
+      border-radius: 12px;
+      font-weight: bold;
+      margin-top: 20px;
+      letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 900px) {
+ #desktop_banner {
+   display: none;
+ }
+
+ #mobile_banner {
+   display: block;
+ }
 }
 </style>
 </head>
 <body>
+  <img id="desktop_banner" src="assets/banner_desktop.png" />
+    <img id="mobile_banner" src="assets/banner_mobile.png" />
   <div class="logo">
-  Zoetic
-</div>
+    zoetic
+  </div>
+  <div class="vision">
+    Stealth
+  </div>
+  <div class="contact">
+    info@zoeticai.com
+  </div>
 </body>
 
 </html>
