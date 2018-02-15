@@ -4,6 +4,7 @@ body {
   padding: 0;
   width: 100%;
   font-family: 'Nunito', sans-serif;
+  color: #434343;
 }
 
 .header {
@@ -78,9 +79,11 @@ button:focus {
 
 #arch {
   color: #fff;
+  margin: auto;
   padding: 50px 0 80px;
   position: relative;
   height: 350px;
+  max-width: 800px;
 }
 
 #arch .box {
@@ -213,6 +216,15 @@ button:focus {
   position: absolute;
   top: calc(50% - 15px);
   left: calc(50% - 50px);
+}
+
+.copyright {
+  font-size: 12px;
+  position: absolute;
+  color: #caceea;
+  width: 100%;
+  bottom: 6px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -434,7 +446,9 @@ button:focus {
   }
 
   .header-container {
-    width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1024px;
   }
 
   .header .title {
@@ -460,7 +474,9 @@ button:focus {
   .content {
     margin: auto;
     margin-top: 40px;
-    max-width: 800px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1024px;
   }
 
   .feature-section {
@@ -473,9 +489,9 @@ button:focus {
     background-image: url(images/personality.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 170px;
-    margin: 40px 40px 40px 0;
+    width: 300px;
+    height: 255px;
+    margin: 0 40px 0 0;
     float: left;
   }
 
@@ -485,7 +501,8 @@ button:focus {
     left: 320px;
     width: 390px;
     bottom: 34px;*/
-    height: 290px;
+    padding: 10px 0;
+    height: 260px;
   }
 
   #learning-section .txt {
@@ -494,6 +511,7 @@ button:focus {
     top: 52px;
     left: 38px;
     bottom: 34px;*/
+    padding: 10px 0;
     height: 340px;
   }
 
@@ -501,9 +519,9 @@ button:focus {
     background-image: url(images/learning.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 220px;
-    margin: 40px 0 40px 40px;
+    width: 300px;
+    height: 330px;
+    margin: 0 0 0 40px;
     float: right;
   }
 
@@ -511,9 +529,9 @@ button:focus {
     background-image: url(images/operating-system.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 190px;
-    margin: 40px 40px 40px 0;
+    width: 300px;
+    height: 285px;
+    margin: 0 40px 0 0;
     float: left;
   }
 
@@ -523,6 +541,7 @@ button:focus {
     left: 342.5px;
     width: 390px;
     bottom: 34px;*/
+    padding: 10px 0;
     height: 290px;
   }
 
