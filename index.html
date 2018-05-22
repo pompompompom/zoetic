@@ -11,7 +11,8 @@
     <link rel="manifest" href="assets/manifest.json">
     <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" type="text/css" href="page.css">
+    <link rel="stylesheet" type="text/css" href="page_v2.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -40,48 +41,39 @@
   </head>
   <body>
     <div class="header">
-      <div class="header-container">
-        <div class="social">
-          <div class="icon">
-            <a href="https://www.facebook.com/zoeticai" target="_blank">
-              <i class="fab fa-facebook-square"></i>
-            </a>
+      <div class="width-limiter">
+        <div class="aspect-ratio-40">
+          <div class="header-content-wrapper">
+            <div class="header-nav">
+              <div class="item">
+                <a href="/">Home</a>
+              </div>
+              <div class="item">
+                <a href="https://www.iatomo.com/blog.html"
+                   target="_blank">Blogs</a>
+              </div>
+              <div class="item">
+                <a href="https://iatomo.com"
+                   target="_blank">Comics</a>
+              </div>
+            </div>
+            <div class="header-container">
+              <div class="title">ZOETIC</div>
+              <div class="description">
+                <div class="txt">Bring Empathy to Robots with AI</div>
+              </div>
+              <div class="subscribe">
+                <a href="http://eepurl.com/dkQM0j" target="_blank">
+                  <button>Subscribe</button>
+                </a>
+                <a href="mailto:info@zoeticai.com?subject=Demo%20Request" target="_blank">
+                  <button>Demo</button>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="icon">
-            <a href="https://www.twitter.com/zoeticai" target="_blank">
-              <i class="fab fa-twitter-square"></i>
-            </a>
-          </div>
-          <div class="icon">
-            <a href="https://www.instagram.com/zoeticai" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-          <div class="icon">
-            <a href="https://www.linkedin.com/company/zoeticai" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-        <div class="title">Zoetic AI</div>
-        <div class="description">
-          <div class="txt">
-            Bring Empathy to Robots with AI
-          </div>
-        </div>
-        <div class="subscribe">
-            <a href="http://www.iatomo.com" target="_blank">
-              <button>Comics</button>
-            </a>
-          <a href="mailto:info@zoeticai.com?subject=Demo%20Request" target="_blank">
-            <button>Request a Demo</button>
-          </a>
-          <a href="http://eepurl.com/dkQM0j" target="_blank">
-            <button>Subscribe</button>
-          </a>
         </div>
       </div>
-      <div class="kid-robot"></div>
     </div>
     <div class="content">
       <div id="personality-section" class="feature-section">
@@ -90,44 +82,52 @@
           <p class="section-headline personality">
             <span class="section-no blue">01</span> Personality
           </p>
-          <p>
+          <p class="desktop">
             Having a personality on your robot not only means
             transforming your robot from a replaceable tool to a lovable
             character, but also means a much more engaging interaction
             and deeply connected users.
           </p>
-          <p>
-            From a shy unicorn to an outgoing panda, we make personality
-            easy for you. Configuring personality for your robots is as
-            easy as drag-and-drop. Turn your robot friend into real
-            companions using our Personality Engine.
+          <p class="desktop">
+            From a shy unicorn to an outgoing panda, we make
+            personality easy for you. Configuring personality for
+            your robots is as easy as drag-and-drop. Turn your robot
+            friend into real companions using our Personality Engine.
+          </p>
+          <p class="mobile">
+            Transform robots from cold machines,
+            to characters with their own drives.
           </p>
         </div>
       </div>
       <div id="learning-section" class="feature-section">
-        <div class="img"></div>
         <div class="txt">
           <p class="section-headline learning">
             <span class="section-no pink">02</span> Learning
           </p>
-          <p>
+          <p class="desktop">
             We learn through trial and error and through experiences.
             Why can't our robots do the same? When we create a story,
             we know that our character needs to grow with the users.
             But how about our robots?
           </p>
-          <p>
+          <p class="desktop">
             With our reinforcement learning engine, your robot can now
             learn just like we do. No more rule-based coding for your
             robots' interactions. Just describe the world to your robot,
             and let it write its own rules.
           </p>
-          <p>
-            Enable learning on your robots and see them grow with the
-            users everyday. Experience the magic of a different robot
-            every day, and a different robot for every user.
+          <p class="desktop">
+            Enable learning on your robots and see them grow with
+            the users everyday. Experience the magic of a different
+            robot every day, and a different robot for every user.
+          </p>
+          <p class="mobile">
+            Evolve and become smarter everyday,
+            and are unique to their owners.
           </p>
         </div>
+        <div class="img"></div>
       </div>
       <div id="os-section" class="feature-section">
         <div class="img"></div>
@@ -135,84 +135,83 @@
           <p class="section-headline os">
             <span class="section-no shale">03</span> Zoetic OS
           </p>
-          <p>
-            Want to quickly get your robot up and running without worrying
-            about rewriting the operating system? Zoetic OS is the perfect
-            OS for you.
+          <p class="desktop">
+            Want to quickly get your robot up and running without
+            worrying about rewriting the operating system?
+            Zoetic OS is the perfect OS for you.
           </p>
-          <p>
+          <p class="desktop">
             From ROS to Android, Zoetic OS is optimized for embedded
-            processors. With built-in support for security, OTA, resource
-            management, and module management, it makes building robots
-            easier than ever.
+            processors. With built-in support for security, OTA,
+            resource management, and module management, it makes
+            building robots easier than ever.
           </p>
-          <p>
-            Integrate with Zoetic OS to unlock a wide repo of perceptions
-            and expressions, to quickly let your robots sense and immerse
-            in the world.
+          <p class="desktop">
+            Integrate with Zoetic OS to unlock a wide repo of
+            perceptions and expressions, to quickly let your robots
+            sense and immerse in the world.
           </p>
-        </div>
-      </div>
-      <div id="arch" class="feature-section">
-        <div class="layer">
-          <div class="title box">
-            <div class="txt">Zoetic Software Applications</div>
-          </div>
-        </div>
-        <div class="layer two-col">
-          <div class="services box">
-            <div class="txt">Robot Services</div>
-            <div class="feature-icon-txt-container">
-              <div class="feature-icon-txt">
-                <div class="icon personality"></div>
-                <div class="txt">Personality</div>
-              </div>
-              <div class="feature-icon-txt">
-                <div class="icon learning"></div>
-                <div class="txt">Learning</div>
-              </div>
-            </div>
-          </div>
-          <div class="packages box">
-            <div class="txt">Package Hub</div>
-            <div class="feature-icon-txt-container">
-              <div class="feature-icon-txt">
-                <div class="icon perception"></div>
-                <div class="txt">Perception</div>
-              </div>
-              <div class="feature-icon-txt">
-                <div class="icon expression"></div>
-                <div class="txt">Expression</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="layer">
-          <div class="os box">
-            <div class="txt">Zoetic OS</div>
-            <div class="feature-txt-container">
-              <div class="feature-txt">
-                Modules Framework
-              </div>
-              <div class="feature-txt">
-                Security
-              </div>
-              <div class="feature-txt">
-                Resource Management
-              </div>
-              <div class="feature-txt">
-                Hardware Integration
-              </div>
-            </div>
-          </div>
+          <p class="mobile">
+            Focus on what matters for your robot experience by using
+            the Zoetic OS, compatible with Linux and Android.
+          </p>
         </div>
       </div>
     </div>
     <div class="footer">
-      <div class="kid-robot-footer"></div>
-      <a href="https://angel.co/l/21AWxH" target="_blank">
-        <button>Join us!</button>
-      </a>
+      <div>Ready to transform your robots?</div>
+      <div class="social">
+        <div class="icon">
+          <a href="https://www.facebook.com/zoeticai" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://www.twitter.com/zoeticai" target="_blank">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://www.instagram.com/zoeticai" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://www.linkedin.com/company/zoeticai" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="sitemap">
+        <div class="contact item">
+          <!--Contact<br>-->
+          <a href="mailto:info@zoeticai.com"
+             target="_blank">Contact</a>
+          <!--<a href="mailto:info@zoeticai.com"
+             target="_blank">info@zoeticai.com</a>-->
+        </div>
+        <div class="jobs item">
+          <!--Jobs<br>-->
+          <a href="https://angel.co/l/21AWxH"
+             target="_blank">Jobs</a>
+          <!--<a href="https://angel.co/l/21AWxH"
+             target="_blank">Apply on AngelList</a>-->
+        </div>
+        <div class="blog item">
+          <!--Blog<br>-->
+          <a href="http://iatomo.com"
+             target="_blank">Blog</a>
+          <!--<a href="http://iatomo.com"
+             target="_blank">iatomo.com</a>-->
+        </div>
+        <div class="press item">
+          <!--Press<br>-->
+          <a href="mailto:media@zoeticai.com"
+             target="_blank">Press</a>
+          <!--<a href="mailto:media@zoeticai.com"
+             target="_blank">media@zoeticai.com</a>-->
+        </div>
+      </div>
       <div class="copyright">
         &copy; 2018 Zoetic, Inc. All rights reserved.
       </div>

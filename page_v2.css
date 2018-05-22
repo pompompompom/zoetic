@@ -1,0 +1,274 @@
+body {
+  margin: auto;
+  width: 100%;
+  font-family: "Dosis", arial;
+  font-size: 16px;
+}
+
+a {
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in;
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  opacity: 1.0;
+}
+
+.aspect-ratio-25 {
+  padding-top: 25%;
+  width: 100%;
+  position: relative;
+}
+
+.aspect-ratio-40 {
+  padding-top: 40%;
+  width: 100%;
+  position: relative;
+}
+
+.aspect-ratio-50 {
+  padding-top: 50%;
+  width: 100%;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+}
+
+.header, .content, .footer {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  background-color: #353e58;
+  color: #fff;
+  background-image:
+      url(images/wavewhite.png),
+      url(images/wave1.png),
+      url(images/wave2.png),
+      url(images/wave3.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 10%, 100% 50%, 100% 30%, 100% 50%;
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-size: contain;
+  }
+}
+
+.header .width-limiter {
+  max-width: 1024px;
+  min-height: 260px;
+  margin: auto;
+  background-image:
+      url(images/p1.png),
+      url(images/p2.png),
+      url(images/p3.png),
+      url(images/p4.png),
+      url(images/p5.png);
+  background-repeat: no-repeat;
+  background-position: 25% 8%, 85% 22%, 10% 38%, 23% 90%, 75% 75%;
+  background-size: 4%, 8%, 8%, 12%, 12%;
+}
+
+.header-container {
+  margin: 5px 0;
+}
+
+.header-container .title {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.header-container .description {
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .header-container .title {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .header-container .description {
+    font-size: 18px;
+  }
+}
+
+.header-container .subscribe {
+  margin-top: 10px;
+}
+
+.header-container button {
+  width: 130px;
+  margin: 10px 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #353e58; 
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0    , 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  padding: 8px 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s ease-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  outline: none;
+}
+
+.header-container button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.header-content-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header-nav {
+  text-align: right;
+  margin: 10px 10px 0 0;
+}
+
+.header-nav .item {
+  display: inline-block; 
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+
+.header-nav .item:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    visibility: hidden;
+  }
+}
+
+.content {
+  width: 80%;
+  text-align: center;
+  max-width: 1024px;
+  margin: auto;
+  padding: 0 5px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: calc(100% - 10px);
+  }
+}
+
+.content .feature-section .img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+  padding-top: 25%;
+  margin: 0 5px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content .feature-section .txt {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+  padding: 10px 30px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .content .feature-section .txt {
+    padding: 10px;
+  }
+}
+
+#personality-section .img {
+  background-image: url(images/personality_v2.png);
+}
+
+#learning-section .img {
+  background-image: url(images/learning_v2.png);
+}
+
+#os-section .img {
+  background-image: url(images/os_v2.png);
+}
+
+.section-headline {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.footer {
+  padding: 50px 0 10px;
+  text-align: center;
+  /*background-color: #353e58;*/
+  background-image: url(images/wave_bottom.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.social {
+  margin: 15px;
+}
+
+.social a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.footer .social .icon {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.footer .sitemap {
+  margin: 15px auto;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+}
+
+.footer .sitemap .item {
+  flex: 1 1 0;
+}
+
+.footer .sitemap .item a {
+  color: #64a4db;
+}
